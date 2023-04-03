@@ -1,7 +1,7 @@
 # project-web-team-5
 project-web-team-5 created by GitHub Classroom
 
-#Team 5
+Team 5
 
-##Members
+Members
 1. Kazuki Pickersgill
