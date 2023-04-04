@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
@@ -68,3 +69,12 @@ $ npm install
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+=======
+# project-web-team-5
+project-web-team-5 created by GitHub Classroom
+
+Team 5
+
+Members
+1. Kazuki Pickersgill
+>>>>>>> 94b44f22111eeef50410fb042c3820e979adbc00
