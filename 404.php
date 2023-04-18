@@ -2,59 +2,89 @@
 /**
  * The template for displaying 404 pages (not found)
  *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package Group_5_Theme
+ * @package Understrap
  */
 
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
 get_header();
+
+$container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-	<main id="primary" class="site-main">
+<div class="wrapper" id="error-404-wrapper">
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'group_5_theme' ); ?></h1>
-			</header><!-- .page-header -->
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'group_5_theme' ); ?></p>
+		<div class="row">
 
-					<?php
-					get_search_form();
+			<div class="col-md-12 content-area" id="primary">
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+				<main class="site-main" id="main">
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'group_5_theme' ); ?></h2>
-						<ul>
+					<section class="error-404 not-found">
+
+						<header class="page-header">
+
+							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'understrap' ); ?></h1>
+
+						</header><!-- .page-header -->
+
+						<div class="page-content">
+
+							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'understrap' ); ?></p>
+
+							<?php get_search_form(); ?>
+
+							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+
+							<?php if ( understrap_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+
+								<div class="widget widget_categories">
+
+									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'understrap' ); ?></h2>
+
+									<ul>
+										<?php
+										wp_list_categories(
+											array(
+												'orderby'  => 'count',
+												'order'    => 'DESC',
+												'show_count' => 1,
+												'title_li' => '',
+												'number'   => 10,
+											)
+										);
+										?>
+									</ul>
+
+								</div><!-- .widget -->
+
+							<?php endif; ?>
+
 							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
+
+							/* translators: %1$s: smiley */
+							$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'understrap' ), convert_smilies( ':)' ) ) . '</p>';
+							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+
+							the_widget( 'WP_Widget_Tag_Cloud' );
 							?>
-						</ul>
-					</div><!-- .widget -->
 
-					<?php
-					/* translators: %1$s: smiley */
-					$group_5_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'group_5_theme' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$group_5_theme_archive_content" );
+						</div><!-- .page-content -->
 
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+					</section><!-- .error-404 -->
 
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
+				</main>
 
-	</main><!-- #main -->
+			</div><!-- #primary -->
+
+		</div><!-- .row -->
+
+	</div><!-- #content -->
+
+</div><!-- #error-404-wrapper -->
 
 <?php
 get_footer();

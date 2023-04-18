@@ -1,35 +1,51 @@
 {
-    "name": "automattic/underscores",
-    "type": "wordpress-theme",
-    "description": "Hi. I'm a starter theme called _s, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.",
-    "keywords": [
-        "WordPress",
-        "Themes"
-    ],
-    "homepage": "https://github.com/Automattic/_s",
-    "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "Contributors",
-            "homepage": "https://github.com/Automattic/_s/graphs/contributors"
-        }
-    ],
-    "require": {
-        "php": ">=5.6"
-    },
-    "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-        "wptrt/wpthemereview": "^0.2.1",
-        "php-parallel-lint/php-parallel-lint": "^1.2.0",
-        "wp-cli/i18n-command": "^2.2.5"
-    },
-    "scripts": {
-        "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
-        "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
-        "make-pot": "wp i18n make-pot . languages/_s.pot"
-    },
-    "support": {
-        "issues": "https://github.com/Automattic/_s/issues",
-        "source": "https://github.com/Automattic/_s"
-    }
+	"name": "understrap/understrap",
+	"description": "Combines Automattic's Underscores Starter Theme and Bootstrap",
+	"type": "wordpress-theme",
+	"license": "GPL-3.0",
+	"minimum-stability": "stable",
+	"keywords": [
+		"wordpress",
+		"theme",
+		"bootstrap"
+	],
+	"homepage": "https://github.com/understrap/understrap",
+	"authors": [
+		{
+			"name": "Contributors",
+			"homepage": "https://github.com/understrap/understrap/contributors.md"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	},
+	"require-dev": {
+		"php-parallel-lint/php-parallel-lint": "^1.3.2",
+		"phpcompatibility/phpcompatibility-wp": "^2.1.4",
+		"phpmd/phpmd": "^2.13.0",
+		"phpstan/phpstan": "^1.9.0",
+		"roave/security-advisories": "dev-master",
+		"squizlabs/php_codesniffer": "^3.7.1",
+		"szepeviktor/phpstan-wordpress": "^1.1.3",
+		"wp-coding-standards/wpcs": "^2.3.0",
+		"wptrt/wpthemereview": "^0.2.1"
+	},
+	"scripts": {
+		"php-lint": "@php ./vendor/php-parallel-lint/php-parallel-lint/parallel-lint --exclude vendor --exclude node_modules --exclude dist --exclude .git --exclude .phpstan-cache .",
+		"phpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs -p",
+		"phpcs-ga": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs -n --report=checkstyle",
+		"phpcs-fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+		"phpcs-config-set" : "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --config-set installed_paths ../../phpcompatibility/php-compatibility,../../phpcompatibility/phpcompatibility-paragonie,../../phpcompatibility/phpcompatibility-wp,../../wp-coding-standards/wpcs,../../wptrt/wpthemereview",
+		"phpmd": "@php ./vendor/phpmd/phpmd/src/bin/phpmd . ansi phpmd.xml",
+		"phpmd-baseline": "@phpmd -- --generate-baseline",
+		"phpmd-ga": "@php ./vendor/phpmd/phpmd/src/bin/phpmd . github phpmd.xml",
+		"phpstan": "@php ./vendor/phpstan/phpstan/phpstan analyse -a src/phpstan/autoload.php",
+		"phpstan-baseline": "@php ./vendor/phpstan/phpstan/phpstan analyse -a src/phpstan/autoload.php --generate-baseline",
+		"post-install-cmd": "@phpcs-config-set",
+		"post-update-cmd": "@phpcs-config-set"
+	},
+	"support": {
+		"issues": "https://github.com/understrap/understrap/issues",
+		"source": "https://github.com/understrap/understrap"
+	}
 }
