@@ -28,13 +28,7 @@ Do not modify the parent Understrap theme. Instead, download a copy of the Under
 Full developer documentation: https://docs.understrap.com
 */
 
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
-}
-
-p{
-    font-family: "Times New Roman", Times, serif;
-    font-size: 100px;
-    color: aqua;
-}
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 24px; 
+  }
