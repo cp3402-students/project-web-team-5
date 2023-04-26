@@ -14121,10 +14121,6 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
-body {
-  background: #ff0000 !important;
-}
-
 h1, h2, h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 45px;
@@ -14133,6 +14129,10 @@ h1, h2, h3 {
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 65px;
+}
+
+body {
+  background-color: white;
 }
 
 /*# sourceMappingURL=theme-bootstrap4.css.map */
