@@ -27,3 +27,8 @@ WP Bootstrap Navwalker by Edward McIntyre & William Patton: https://github.com/t
 Do not modify the parent Understrap theme. Instead, download a copy of the Understrap Child starter theme and do all your development within the child theme.
 Full developer documentation: https://docs.understrap.com
 */
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
