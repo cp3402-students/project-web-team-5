@@ -1,4 +1,13 @@
 @charset "UTF-8";
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 24px; /* You can adjust the size as desired */
+}
+
+body {
+  background-color: brown;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -15353,6 +15362,10 @@ figure.woocommerce-product-gallery__wrapper {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+
+body {
+  background: #ff0000 !important;
 }
 
 /*# sourceMappingURL=theme.css.map */
