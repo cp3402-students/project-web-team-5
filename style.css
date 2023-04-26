@@ -28,11 +28,11 @@ Do not modify the parent Understrap theme. Instead, download a copy of the Under
 Full developer documentation: https://docs.understrap.com
 */
 
-* {
+body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 24px; 
   }
 
-* {
+body {
     background-color: brown;
 }
