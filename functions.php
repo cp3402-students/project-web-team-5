@@ -27,6 +27,9 @@ $understrap_includes = array(
 	'/editor.php',                          // Load Editor functions.
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
+	$css_version = wp_get_theme()->get( 'Version' );
+    wp_enqueue_style( 'understrap-styles', get_stylesheet_uri(), array(), $css_version );
+
 );
 
 // Load WooCommerce functions if WooCommerce is activated.
