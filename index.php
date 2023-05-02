@@ -35,12 +35,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 
 			<main class="site-main" id="main">
+			<?php $Sponsors = array(
+				'post_type' => 'post' ,
+				'orderby' => 'date' ,
+				'order' => 'DESC' ,
+				'posts_per_page' => 6,
+				'category_name' => 'sponsors',
+				'paged' => get_query_var('paged'),
+				'post_parent' => $parent
+			); ?>
 
-				<?php
-				if ( have_posts() ) {
+			<?php
+				$SponsorQuery = new WP_Query($Sponsors);
+				if ( $SponsorQuery->have_posts() ) {
 					// Start the Loop.
-					while ( have_posts() ) {
-						the_post();
+					while ( $SponsorQuery->have_posts() ) {
+						$SponsorQuery->the_post();
 
 						/*
 						 * Include the Post-Format-specific template for the content.
@@ -52,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				} else {
 					get_template_part( 'loop-templates/content', 'none' );
 				}
-				?>
+			?>
 
 			</main>
 
