@@ -1,10 +1,10 @@
 // Add your JS customizations here
+// js/custom-scripts.js
+
 jQuery(document).ready(function($) {
-    // Check if there's a dropdown menu
-    if ($('.dropdown-menu').length > 0) {
-      // Make parent menu items clickable
-      $('.menu-item-has-children > a').on('click', function() {
-        window.location = $(this).attr('href');
-      });
-    }
+    $('.dropdown-toggle').click(function() {
+      let location = $(this).attr('href');
+      window.location.href = location;
+      return false;
+    });
   });
