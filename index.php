@@ -35,6 +35,64 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 
 			<main class="site-main" id="main">
+			<?php $Credo = array(
+				'post_type' => 'post' ,
+				'orderby' => 'date' ,
+				'order' => 'DESC' ,
+				'posts_per_page' => 6,
+				'category_name' => 'credo',
+				'paged' => get_query_var('paged'),
+				'post_parent' => $parent
+			); ?>
+
+			<?php
+				$CredoQuery = new WP_Query($Credo);
+				if ( $CredoQuery->have_posts() ) {
+					// Start the Loop.
+					while ( $CredoQuery->have_posts() ) {
+						$CredoQuery->the_post();
+						
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'loop-templates/content', get_post_format() );
+					}
+				} else {
+					get_template_part( 'loop-templates/content', 'none' );
+				}
+			?>
+
+			<?php $Committee = array(
+				'post_type' => 'post' ,
+				'orderby' => 'date' ,
+				'order' => 'DESC' ,
+				'posts_per_page' => 6,
+				'category_name' => 'committee',
+				'paged' => get_query_var('paged'),
+				'post_parent' => $parent
+			); ?>
+
+			<?php
+				$CommitteeQuery = new WP_Query($Committee);
+				if ( $CommitteeQuery->have_posts() ) {
+					// Start the Loop.
+					while ( $CommitteeQuery->have_posts() ) {
+						$CommitteeQuery->the_post();
+
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'loop-templates/content', get_post_format() );
+					}
+				} else {
+					get_template_part( 'loop-templates/content', 'none' );
+				}
+			?>
+
 			<?php $Sponsors = array(
 				'post_type' => 'post' ,
 				'orderby' => 'date' ,
