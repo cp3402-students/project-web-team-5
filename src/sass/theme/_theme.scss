@@ -13,3 +13,7 @@ body{
 body{
     background-color: white;
 }
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
