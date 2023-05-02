@@ -19,6 +19,11 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<script>
+	jQuery(document).ready(function() {
+	  jQuery('.dropdown-toggle').dropdown();
+	});
+	</script>
 	<?php wp_head(); ?>
 </head>
 
