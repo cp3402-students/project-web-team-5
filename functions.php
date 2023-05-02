@@ -43,3 +43,12 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
+
+// funtion to show content fully on the index page rather than as excerpts
+function understrap_show_full_content( $content ) {
+	if ( is_home() || is_front_page() ) { // Only modify loop on index page
+		$content = get_the_content();
+	}
+	return $content;
+}
+add_filter( 'the_excerpt', 'understrap_show_full_content' );
