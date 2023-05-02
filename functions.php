@@ -43,3 +43,8 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
+
+function understrap_enqueue_dropdown_scripts() {
+    wp_enqueue_script( 'understrap-dropdown-script', get_template_directory_uri() . '/js/dropdown.js', array( 'jquery' ), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'understrap_enqueue_dropdown_scripts' );
