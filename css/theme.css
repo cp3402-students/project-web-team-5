@@ -15378,4 +15378,12 @@ body {
   background-color: white;
 }
 
+p {
+  color: aquamarine;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 /*# sourceMappingURL=theme.css.map */
