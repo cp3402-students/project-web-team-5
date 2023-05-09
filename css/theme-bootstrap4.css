@@ -14123,16 +14123,16 @@ figure.woocommerce-product-gallery__wrapper {
 
 h1, h2, h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 45px;
+  font-size: 10px;
 }
 
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 65px;
+  font-size: 10px;
 }
 
 body {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(251, 255, 0);
 }
 
 /*# sourceMappingURL=theme-bootstrap4.css.map */
