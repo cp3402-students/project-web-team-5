@@ -36,6 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main">
 			<?php $Credo = array(
+				// Create the query loop to show the the websites credo
 				'post_type' => 'post' ,
 				'orderby' => 'date' ,
 				'order' => 'DESC' ,
@@ -46,6 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			); ?>
 
 			<?php
+			// Shows the websites credo
 				$CredoQuery = new WP_Query($Credo);
 				if ( $CredoQuery->have_posts() ) {
 					// Start the Loop.
@@ -65,6 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 
 			<?php $Committee = array(
+				// Create the query loop to show the the websites committee memebers 
 				'post_type' => 'post' ,
 				'orderby' => 'date' ,
 				'order' => 'DESC' ,
@@ -76,6 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<?php
 				$CommitteeQuery = new WP_Query($Committee);
+				// Shows the websites committee memebers 
 				if ( $CommitteeQuery->have_posts() ) {
 					// Start the Loop.
 					while ( $CommitteeQuery->have_posts() ) {
@@ -94,6 +98,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 
 			<?php $Sponsors = array(
+				// Create the query loop to show the the websites Sponsors
 				'post_type' => 'post' ,
 				'orderby' => 'date' ,
 				'order' => 'DESC' ,
@@ -105,6 +110,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<?php
 				echo ("Sponsers:");
+				// Shows the websites Sponsors
 				$SponsorQuery = new WP_Query($Sponsors);
 				if ( $SponsorQuery->have_posts() ) {
 					// Start the Loop.
@@ -124,6 +130,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 
 			<?php $RadioStations = array(
+				// Create the query loop to show the the websites Radio Sponsors
 				'post_type' => 'post' ,
 				'orderby' => 'date' ,
 				'order' => 'ASC' ,
@@ -137,6 +144,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				echo ("Country Music Radio Stations that are Valued
 				Supporters of The Townsville and Thuringowa
 				Country Music Assn.");
+				// Shows the websites Radio Sponsors
 				$RadioQuery = new WP_Query($RadioStations);
 				if ( $RadioQuery->have_posts() ) {
 					// Start the Loop.
