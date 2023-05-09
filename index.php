@@ -104,11 +104,44 @@ $container = get_theme_mod( 'understrap_container_type' );
 			); ?>
 
 			<?php
+				echo ("Sponsers:");
 				$SponsorQuery = new WP_Query($Sponsors);
 				if ( $SponsorQuery->have_posts() ) {
 					// Start the Loop.
 					while ( $SponsorQuery->have_posts() ) {
 						$SponsorQuery->the_post();
+
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'loop-templates/content', get_post_format() );
+					}
+				} else {
+					get_template_part( 'loop-templates/content', 'none' );
+				}
+			?>
+
+			<?php $RadioStations = array(
+				'post_type' => 'post' ,
+				'orderby' => 'date' ,
+				'order' => 'ASC' ,
+				'posts_per_page' => 6,
+				'category_name' => 'RadioSponsors',
+				'paged' => get_query_var('paged'),
+				'post_parent' => $parent
+			); ?>
+
+			<?php
+				echo ("Country Music Radio Stations that are Valued
+				Supporters of The Townsville and Thuringowa
+				Country Music Assn.");
+				$RadioQuery = new WP_Query($RadioStations);
+				if ( $RadioQuery->have_posts() ) {
+					// Start the Loop.
+					while ( $RadioQuery->have_posts() ) {
+						$RadioQuery->the_post();
 
 						/*
 						 * Include the Post-Format-specific template for the content.
