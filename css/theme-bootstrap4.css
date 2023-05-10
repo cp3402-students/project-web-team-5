@@ -3536,7 +3536,13 @@ input[type=button].btn-block {
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-toggle > a.button input[type=checkbox],
 .wpcf7 .btn-group-toggle > input[type=submit] input[type=checkbox],
 .btn-group-toggle > .btn-group > .btn input[type=radio],
-.btn-group-toggle > .btn-group > .btn input[type=checkbox] {
+.woocommerce-info .btn-group-toggle > .btn-group > a.button input[type=radio],
+.woocommerce-notices-wrapper .woocommerce-message .btn-group-toggle > .btn-group > a.button input[type=radio],
+.wpcf7 .btn-group-toggle > .btn-group > input[type=submit] input[type=radio],
+.btn-group-toggle > .btn-group > .btn input[type=checkbox],
+.woocommerce-info .btn-group-toggle > .btn-group > a.button input[type=checkbox],
+.woocommerce-notices-wrapper .woocommerce-message .btn-group-toggle > .btn-group > a.button input[type=checkbox],
+.wpcf7 .btn-group-toggle > .btn-group > input[type=submit] input[type=checkbox] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -6844,7 +6850,6 @@ a.close.disabled {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
@@ -14123,16 +14128,16 @@ figure.woocommerce-product-gallery__wrapper {
 
 h1, h2, h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 45px;
+  font-size: 25px;
 }
 
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 65px;
+  font-size: 30px;
 }
 
 body {
-  background-color: rgb(216, 0, 0);
+  background-color: rgb(163, 224, 21);
 }
 
 /*# sourceMappingURL=theme-bootstrap4.css.map */
