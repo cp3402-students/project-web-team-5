@@ -15327,4 +15327,8 @@ body {
   background-color: rgb(0, 225, 233);
 }
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 /*# sourceMappingURL=theme.css.map */
