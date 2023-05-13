@@ -14206,4 +14206,89 @@ a {
   color: #0a0a0a;
 }
 
+/* Top navigation bar */
+.site-header {
+  background-color: #fc8c03;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.site-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.site-header li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.site-header li:hover a {
+  background-color: #fff;
+  color: #333;
+}
+
+.site-header li.current-menu-item a {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Bottom navigation bar */
+.site-footer {
+  background-color: #fc8c03;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.site-footer li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.site-footer li:hover a {
+  background-color: #fff;
+  color: #333;
+}
+
+.site-footer li.current-menu-item a {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
 /*# sourceMappingURL=theme-bootstrap4.css.map */
