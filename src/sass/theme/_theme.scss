@@ -31,3 +31,53 @@ a {
     color: #fc8c03;
 }
 
+/* Main Content Styles */
+
+.site-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.entry-header {
+    margin-bottom: 20px;
+}
+
+.entry-title a {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sidebar Styles */
+
+.site-sidebar {
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+    background-color: #fc8c03;
+    padding: 20px;
+}
+
+.widget-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+
+.site-footer {
+    background-color: #fc8c03;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-info {
+    font-size: 14px;
+    color: #0a0a0a;
+}
+
