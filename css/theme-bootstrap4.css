@@ -14126,18 +14126,151 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
-h1, h2, h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 25px;
+h1 {
+  font-family: Arial, Helvetica;
+  font-size: 40px;
+  color: #fc8c03;
+  font-weight: bold;
 }
 
-body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+h2 {
+  font-family: Arial, Helvetica;
   font-size: 30px;
+  color: #fc8c03;
+  font-weight: bold;
+}
+
+a {
+  color: #fc8c03;
+}
+
+h3 {
+  font-family: Arial, Helvetica;
+  font-size: 30px;
+  color: #0a0a0a;
+  font-weight: bold;
 }
 
 body {
-  background-color: rgb(163, 224, 21);
+  font-family: Arial, Helvetica;
+  font-size: 30px;
+  background-color: #f1f1f1;
+  color: #0a0a0a;
+}
+
+body {
+  background-image: url("src/sass/Images/websitebg.png");
+  background-size: cover;
+}
+
+/* Bottom navigation bar */
+.site-footer {
+  background-color: #fc8c03;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.site-footer li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.site-footer li:hover a {
+  background-color: #fff;
+  color: #333;
+}
+
+.site-footer li.current-menu-item a {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Main Content Styles */
+.site-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.entry-header {
+  margin-bottom: 20px;
+}
+
+.entry-title a {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.entry-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Top navigation bar */
+.nav {
+  background-color: #fc8c03;
+}
+
+.site-header {
+  background-color: #fc8c03;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.site-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.site-header li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.site-header li:hover a {
+  background-color: #fff;
+  color: #333;
+}
+
+.site-header li.current-menu-item a {
+  background-color: #fff;
+  color: #333;
 }
 
 /*# sourceMappingURL=theme-bootstrap4.css.map */
