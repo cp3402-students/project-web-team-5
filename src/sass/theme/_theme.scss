@@ -13,3 +13,220 @@ h1{
     color: #fc8c03;
     font-weight: bold;
 }
+
+h2{
+    font-family: Arial, Helvetica;
+    font-size: 30px; 
+    color: #fc8c03;
+    font-weight: bold;
+}
+h3{
+    font-family: Arial, Helvetica;
+    font-size: 30px; 
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+a {
+    color: #fc8c03;
+}
+
+/* Main Content Styles */
+
+.site-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.entry-header {
+    margin-bottom: 20px;
+}
+
+.entry-title a {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sidebar Styles */
+
+.site-sidebar {
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+    background-color: #fc8c03;
+    padding: 20px;
+}
+
+.widget-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+
+.site-footer {
+    background-color: #fc8c03;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-info {
+    font-size: 14px;
+    color: #0a0a0a;
+}
+
+
+/* Top navigation bar */
+.site-header {
+    background-color: #fc8c03;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .site-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .site-header li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .site-header li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .site-header li:hover a {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .site-header li.current-menu-item a {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Bottom navigation bar */
+  .site-footer {
+    background-color: #fc8c03;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .site-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .site-footer li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .site-footer li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .site-footer li:hover a {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .site-footer li.current-menu-item a {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  
+/* Mobile first styles */
+/* Style for screens up to 600px */
+@media (max-width: 600px) {
+    /* Adjust header height and padding */
+    .site-header {
+      height: 60px;
+      padding: 10px;
+    }
+    
+    /* Center site title */
+    .site-title {
+      text-align: center;
+    }
+    
+    /* Modify menu to show/hide on click */
+    .site-header ul {
+      display: none;
+    }
+    
+    .site-header.open ul {
+      display: block;
+    }
+    
+    /* Modify menu link styles */
+    .site-header li {
+      display: block;
+      margin: 10px 0;
+    }
+    
+    .site-header li a {
+      padding: 5px;
+    }
+    
+    /* Adjust footer height and padding */
+    .site-footer {
+      height: 60px;
+      padding: 10px;
+    }
+  }
+  
+  /* Styles for screens between 600px and 1200px */
+  @media (min-width: 600px) and (max-width: 1200px) {
+    /* Make header and footer wider */
+    .site-header, .site-footer {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    
+    /* Adjust menu spacing */
+    .site-header li {
+      margin: 0 20px;
+    }
+  }
+  
+  /* Styles for screens over 1200px */
+  @media (min-width: 1200px) {
+    /* Make header and footer even wider */
+    .site-header, .site-footer {
+      max-width: 1440px;
+    }
+  }
+  
