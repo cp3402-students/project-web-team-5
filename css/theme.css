@@ -15328,6 +15328,10 @@ h1, .h1 {
   font-weight: bold;
 }
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 h2, .h2 {
   font-family: Arial, Helvetica;
   font-size: 30px;
@@ -15340,10 +15344,6 @@ h3, .h3 {
   font-size: 30px;
   color: #0a0a0a;
   font-weight: bold;
-}
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
 }
 
 a {
