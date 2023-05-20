@@ -1,89 +1,60 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// Variables
+$primary-color: #fc8c03;
+$secondary-color: #0a0a0a;
+$white: #fff;
+$grey: #333;
+$light-grey: #f1f1f1;
+$base-font: Arial, Helvetica;
+$font-size: 16px;
+$font-weight: bold;
 
-h1{
-    font-family: Arial, Helvetica;
-    font-size: 40px; 
-    color: #fc8c03;
-    font-weight: bold;
-}
-
-h2{
-    font-family: Arial, Helvetica;
-    font-size: 30px; 
-    color: #fc8c03;
-    font-weight: bold;
-}
-
-a {
-    color: #fc8c03;
-}
-
-h3{
-    font-family: Arial, Helvetica;
-    font-size: 30px; 
-    color: #0a0a0a;
-    font-weight: bold;
-}
-
+// Base styles
 body {
-    font-family: Arial, Helvetica;
-    font-size: 30px;
-    background-color: #f1f1f1;
-    color: #0a0a0a;
-}
-
-body {
+    font-family: $base-font;
+    font-size: $font-size;
+    background-color: $light-grey;
+    color: $secondary-color;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
     background-image: url('src/sass/Images/websitebg.png');
     background-size: cover;
 }
 
-/* Bottom navigation bar */
-.site-footer {
-    background-color: #fc8c03;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+// Typography
+h1, h2 {
+    color: $primary-color;
+    font-weight: $font-weight;
 }
 
-.site-footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+h1 {
+    font-size: 2.5em; 
 }
 
-.site-footer li {
-    display: inline-block;
-    margin: 0 10px;
+h2 {
+    font-size: 1.875em;
 }
 
-.site-footer li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
+h2.entry-title {
+    font-size: 1.25em;
 }
 
-.site-footer li:hover a {
-    background-color: #fff;
-    color: #333;
+h3 {
+    font-family: $base-font;
+    font-size: 1.5em; 
+    color: $secondary-color;
+    font-weight: $font-weight;
 }
 
-.site-footer li.current-menu-item a {
-    background-color: #f1f1f1;
-    color: #333;
+a {
+    color: $primary-color;
+    transition: color 0.3s ease;
+    &:hover {
+        color: darken($primary-color, 20%);
+    }
 }
 
-/* Main Content Styles */
-
+// Layout
 .site-content {
     max-width: 800px;
     margin: 0 auto;
@@ -95,8 +66,8 @@ body {
 }
 
 .entry-title a {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 1.75em;
+    font-weight: $font-weight;
 }
 
 .entry-content img {
@@ -104,47 +75,52 @@ body {
     height: auto;
 }
 
-/* Top navigation bar */
-
-.nav {
-    background-color: #fc8c03;
-}
-
-.site-header {
-    background-color: #fc8c03;
-    color: #fff;
+// Navigation styles
+.nav, .site-footer, .site-header {
+    background-color: $primary-color;
+    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
-  }
-  
-  .site-header ul {
+}
+
+.nav ul, .site-footer ul, .site-header ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .site-header li {
+}
+
+.nav li, .site-footer li, .site-header li {
     display: inline-block;
     margin: 0 10px;
-  }
-  
-  .site-header li a {
-    color: #fff;
+}
+
+.nav li a, .site-footer li a, .site-header li a {
+    color: $white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: $font-weight;
     font-size: 18px;
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  .site-header li:hover a {
-    background-color: #fff;
-    color: #333;
-  }
-  
-  .site-header li.current-menu-item a {
-    background-color: #fff;
-    color: #333;
-  }
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav li:hover a, .site-footer li:hover a, .site-header li:hover a {
+    background-color: $white;
+    color: $grey;
+}
+
+.nav li.current-menu-item a, .site-footer li.current-menu-item a, .site-header li.current-menu-item a {
+    background-color: $light-grey;
+    color: $grey;
+}
+
+// Footer
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
