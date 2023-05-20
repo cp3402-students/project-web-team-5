@@ -14,10 +14,6 @@
 //     font-weight: bold;
 // }
 
-// .dropdown:hover > .dropdown-menu {
-//     display: block;
-// }
-
 // h2{
 //     font-family: Arial, Helvetica;
 //     font-size: 30px; 
@@ -29,6 +25,10 @@
 //     font-size: 30px; 
 //     color: #0a0a0a;
 //     font-weight: bold;
+// }
+
+// .dropdown:hover > .dropdown-menu {
+//   display: block;
 // }
 
 // a {
@@ -171,7 +171,7 @@
 //     color: #333;
 //   }
   
-  
+
 // Variables
 $primary-color: #fc8c03;
 $secondary-color: #0a0a0a;
@@ -218,6 +218,10 @@ h3 {
     font-size: 1.5em; 
     color: $secondary-color;
     font-weight: $font-weight;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
 a {
@@ -298,8 +302,6 @@ a {
     right: 0;
     z-index: 9999;
 }
-
-
 
 
 /* Mobile first styles */

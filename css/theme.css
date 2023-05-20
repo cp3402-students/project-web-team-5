@@ -15349,6 +15349,10 @@ h3, .h3 {
   font-weight: bold;
 }
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 a {
   color: #fc8c03;
   transition: color 0.3s ease;
