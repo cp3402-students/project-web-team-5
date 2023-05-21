@@ -15357,6 +15357,10 @@ a:hover {
   color: #975402;
 }
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 .site-content {
   max-width: 800px;
   margin: 0 auto;
