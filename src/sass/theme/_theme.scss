@@ -1,0 +1,166 @@
+// Variables
+$primary-color: #fc8c03;
+$secondary-color: #0a0a0a;
+$white: #fff;
+$grey: #333;
+$light-grey: #f1f1f1;
+$base-font: Arial, Helvetica;
+$font-size: 16px;
+$font-weight: bold;
+
+// Base styles
+body {
+    font-family: $base-font;
+    font-size: $font-size;
+    background-color: $light-grey;
+    color: $secondary-color;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: url('Images/websitebg.png');
+    background-size: cover;
+}
+
+.bg-primary {
+    background-color: $primary-color !important;
+} 
+
+// Typography
+h1, h2 {
+    color: $primary-color;
+    font-weight: $font-weight;
+}
+
+h1 {
+    font-size: 2.5em; 
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+h2.entry-title {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-family: $base-font;
+    font-size: 1.5em; 
+    color: $secondary-color;
+    font-weight: $font-weight;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+a {
+    color: $primary-color;
+    transition: color 0.3s ease;
+    &:hover {
+        color: darken($primary-color, 20%);
+    }
+}
+
+
+// Paragraph styles with blocks and margins
+p {
+    margin: 20px;
+    background-color: rgba(153, 153, 153, 0.3); // darker grey with a bit of transparency
+}
+
+// Layout
+.site-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wp-block-post {
+    border-bottom: 2px solid rgba(0,0,0,0.1); // black
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+.entry-header {
+    margin-bottom: 20px;
+}
+
+.entry-title a {
+    font-size: 1.75em;
+    font-weight: $font-weight;
+}
+
+.entry-content img {
+    max-width: 500px;
+    height: auto;
+}
+
+.entry-content {
+    background-color: rgba(255, 255, 255, 0.8); // slightly transparent white
+    padding: 20px;
+    border-radius: 10px; // rounded corners for a modern look
+}
+
+.wp-block-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+// Adjusts the size of your columns
+.wp-block-column.is-layout-flow {
+    flex-basis: auto;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+// Navigation styles
+.nav, .site-footer, .site-header {
+    background-color: $primary-color;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.nav ul, .site-footer ul, .site-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li, .site-footer li, .site-header li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav li a, .site-footer li a, .site-header li a {
+    color: $white;
+    text-decoration: none;
+    font-weight: $font-weight;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav li:hover a, .site-footer li:hover a, .site-header li:hover a {
+    background-color: $white;
+    color: $grey;
+}
+
+.nav li.current-menu-item a, .site-footer li.current-menu-item a, .site-header li.current-menu-item a {
+    background-color: $light-grey;
+    color: $grey;
+}
+
+// Footer
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
