@@ -18,11 +18,12 @@ body {
     margin: 0;
     padding: 0;
     background: url('Images/websitebg.png');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
+
+.bg-primary {
+    background-color: $primary-color !important;
+} 
 
 // Typography
 h1, h2 {
@@ -49,6 +50,10 @@ h3 {
     font-weight: $font-weight;
 }
 
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
 a {
     color: $primary-color;
     transition: color 0.3s ease;
@@ -57,16 +62,26 @@ a {
     }
 }
 
-.dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-  
+
+// Paragraph styles with blocks and margins
+p {
+    margin: 20px;
+    background-color: rgba(153, 153, 153, 0.3); // darker grey with a bit of transparency
+}
+
 // Layout
 .site-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
+
+.wp-block-post {
+    border-bottom: 2px solid rgba(0,0,0,0.1); // black
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
 
 .entry-header {
     margin-bottom: 20px;
@@ -78,8 +93,26 @@ a {
 }
 
 .entry-content img {
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
+}
+
+.entry-content {
+    background-color: rgba(255, 255, 255, 0.8); // slightly transparent white
+    padding: 20px;
+    border-radius: 10px; // rounded corners for a modern look
+}
+
+.wp-block-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+// Adjusts the size of your columns
+.wp-block-column.is-layout-flow {
+    flex-basis: auto;
+    flex-grow: 1;
+    padding: 0 10px;
 }
 
 // Navigation styles

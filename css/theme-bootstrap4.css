@@ -14138,6 +14138,10 @@ body {
   background-size: cover;
 }
 
+.bg-primary {
+  background-color: #fc8c03 !important;
+}
+
 h1, h2 {
   color: #fc8c03;
   font-weight: bold;
@@ -14162,6 +14166,10 @@ h3 {
   font-weight: bold;
 }
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 a {
   color: #fc8c03;
   transition: color 0.3s ease;
@@ -14170,14 +14178,21 @@ a:hover {
   color: #975402;
 }
 
-.dropdown:hover > .dropdown-menu {
-  display: block;
+p {
+  margin: 20px;
+  background-color: rgba(153, 153, 153, 0.3);
 }
 
 .site-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.wp-block-post {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .entry-header {
@@ -14190,8 +14205,25 @@ a:hover {
 }
 
 .entry-content img {
-  max-width: 100%;
+  max-width: 500px;
   height: auto;
+}
+
+.entry-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wp-block-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wp-block-column.is-layout-flow {
+  flex-basis: auto;
+  flex-grow: 1;
+  padding: 0 10px;
 }
 
 .nav, .site-footer, .site-header {
