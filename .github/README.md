@@ -1,60 +1,46 @@
+# Project Overview
 
-<p align="center"><img src="https://understrap.com/wp-content/uploads/2022/02/Understrap_Logo_Color.svg" width="320" height="auto"></p>
+Welcome to our project! This repository contains all the necessary files to set up and maintain our website. The purpose of this project is to provide a user-friendly and responsive website for our customers. In this README file, you will find a brief overview of the Understrap starter theme for WordPress, created for use in the CP3402 project by Team 5.
 
-[![Wordpress Theme Version](https://img.shields.io/wordpress/theme/v/understrap.svg)](https://wordpress.org/themes/understrap)
-[![Wordpress Theme Active Installs](https://img.shields.io/wordpress/theme/installs/understrap.svg)](https://wordpress.org/themes/understrap/)
-[![Github Last Commit](https://img.shields.io/github/last-commit/understrap/understrap/develop)](https://github.com/understrap/understrap/commits/develop)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+## About Understrap
 
-#### See: [Official Demo](https://understrap.com) | Read: [Official Docs Page](https://docs.understrap.com/)
+Understrap is a WordPress starter theme based on Bootstrap 4. It's designed to be lightweight and fast, with all of the features and functionality that you need to create a custom WordPress site.
 
-# Understrap WordPress Theme Framework
+## About this Theme
 
-Website: [understrap.com](https://understrap.com)
+This theme is a modified version of the Understrap starter theme, created specifically for use in the CP3402 project by Team 5. It includes additional features and functionality that are necessary for our project.
 
-Child Theme Project: [github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
+## Installation
 
-Premium Child Themes: [understrap.com/child-themes/](https://understrap.com/child-themes/)
+To use this theme, you'll need to have WordPress installed on your server. You can download the latest version of WordPress from the official WordPress website.
 
-## About
+To install this theme, follow these steps:
 
-Understrap is the renowned open-source WordPress starter theme that combines Underscores with Bootstrap. Trusted by more than 100,000 developers.
+1. Download the latest version of the theme from the GitHub repository.
+2. Upload the theme folder to your WordPress installation's `wp-content/themes` directory.
+3. Activate the theme from the WordPress admin panel.
 
-## Documentation
+## Usage
 
-Full documentation for this theme is available at [docs.understrap.com](https://docs.understrap.com).
+This theme is designed to be customizable, with a range of options available to help you create the perfect WordPress site for your needs. Some of the key features of the theme include:
 
-## Questions
+- Fully responsive design, optimized for mobile and desktop devices.
+- Customizable header and footer templates.
+- Support for custom post types and taxonomies.
+- A range of widget areas to help you add custom content to your site.
+- Custom page templates for different types of content.
+- Page templates for different types of content.
+- Custom widgets and shortcodes.
 
-For support requests and bugs, we recommend browsing our [issues](https://github.com/understrap/understrap/issues) and opening a new issue if necessary. For more broad discussion, like questions about the roadmap, visit our [discussion board](https://github.com/understrap/understrap/discussions).
+To customize the theme, you can use the WordPress Customizer or edit the theme files directly. We recommend using a child theme if you plan to make significant changes to the theme files.
 
-## Changelog
-See [changelog](CHANGELOG.md)
+## Importatnt Documentation
 
-## Basic Features
+### deployment.md:
+This file guides new team members or project successors in developing theme updates locally, testing them, and deploying to staging and live sites. It covers project management, version control, testing, and automation without private details.
 
-- Combines Underscore’s PHP/JS files and Bootstrap’s HTML/CSS/JS.
-- Comes with Bootstrap (v4 and/or v5) Sass source files and additional .scss files. Nicely sorted and ready to add your own variables and customize the Bootstrap variables.
-- Uses a single minified CSS file for all the basic stuff.
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/) integration (v4.7.0)
-- Jetpack ready
-- WooCommerce support
-- Contact Form 7 support
-- [Child Theme](https://github.com/understrap/understrap-child) ready
-- Translation ready
+### theme.md:
+This guide helps new developers work on the project's theme, including its features, design decisions, and specific development details. It focuses on the theme's uniqueness rather than basic WordPress theme development.
 
-## Understrap Academy
-
-[Become an Understrap Expert.](https://www.understrapacademy.com) Presented by the team behind the Understrap Theme Framework, Understrap Academy is a collection of online courses that will help you speed up your development process, make your projects more profitable, and become an Understrap expert in record time.
-
-## License
-
-Copyright 2022 [Howard Development & Consulting, LLC](https://howarddc.com).
-Understrap is distributed under the terms of the GNU GPL version 3
-
-https://www.gnu.org/licenses/gpl-3.0.en.html
-
-## Credits
-- Font Awesome: https://fontawesome.com/v4.7/license/ (Font: SIL OFL 1.1, (S)CSS: MIT)
-- Bootstrap: https://getbootstrap.com | https://github.com/twbs/bootstrap/blob/main/LICENSE (MIT)
-- WP Bootstrap Navwalker by Edward McIntyre & William Patton: https://github.com/wp-bootstrap/wp-bootstrap-navwalker (GNU GPLv3)
+### site.md:
+Targeting site maintainers, it explains how to add content (pages/posts) and categorize it. It also describes plugin integration, such as a calendar, and provides a tailored understanding of site organization and updates.
