@@ -52,3 +52,10 @@ function understrap_show_full_content( $content ) {
 	return $content;
 }
 add_filter( 'the_excerpt', 'understrap_show_full_content' );
+
+// function to remove email field from comments
+function remove_comment_fields($fields) {
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','remove_comment_fields');
