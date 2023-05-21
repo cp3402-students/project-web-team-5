@@ -14138,7 +14138,11 @@ body {
   background-size: cover;
 }
 
-.bg-brown {
+.main-nav {
+  background-color: brown !important;
+}
+
+.wrapper-navbar {
   background-color: brown !important;
 }
 
