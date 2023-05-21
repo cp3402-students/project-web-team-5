@@ -18,14 +18,11 @@ body {
     margin: 0;
     padding: 0;
     background: url('Images/websitebg.png');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 .bg-primary {
-    background-color: #c58c22!important;
+    background-color: $primary-color !important;
 } 
 
 // Typography
@@ -55,8 +52,8 @@ h3 {
 
 .dropdown:hover > .dropdown-menu {
     display: block;
-  }
-  
+}
+
 a {
     color: $primary-color;
     transition: color 0.3s ease;
