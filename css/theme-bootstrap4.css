@@ -14134,7 +14134,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  background-image: url("../sass/Images/websitebg.png");
+  background: url("Images/websitebg.png");
   background-size: cover;
 }
 
@@ -14160,10 +14160,6 @@ h3 {
   font-size: 1.5em;
   color: #0a0a0a;
   font-weight: bold;
-}
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
 }
 
 a {
@@ -14240,59 +14236,6 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 9999;
-}
-
-/* Mobile first styles */
-/* Style for screens up to 600px */
-@media (max-width: 600px) {
-  /* Adjust header height and padding */
-  .site-header {
-    height: 60px;
-    padding: 10px;
-  }
-  /* Center site title */
-  .site-title {
-    text-align: center;
-  }
-  /* Modify menu to show/hide on click */
-  .site-header ul {
-    display: none;
-  }
-  .site-header.open ul {
-    display: block;
-  }
-  /* Modify menu link styles */
-  .site-header li {
-    display: block;
-    margin: 10px 0;
-  }
-  .site-header li a {
-    padding: 5px;
-  }
-  /* Adjust footer height and padding */
-  .site-footer {
-    height: 60px;
-    padding: 10px;
-  }
-}
-/* Styles for screens between 600px and 1200px */
-@media (min-width: 600px) and (max-width: 1200px) {
-  /* Make header and footer wider */
-  .site-header, .site-footer {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  /* Adjust menu spacing */
-  .site-header li {
-    margin: 0 20px;
-  }
-}
-/* Styles for screens over 1200px */
-@media (min-width: 1200px) {
-  /* Make header and footer even wider */
-  .site-header, .site-footer {
-    max-width: 1440px;
-  }
 }
 
 /*# sourceMappingURL=theme-bootstrap4.css.map */
