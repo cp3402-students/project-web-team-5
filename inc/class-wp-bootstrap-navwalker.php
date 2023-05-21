@@ -190,9 +190,10 @@ if ( ! class_exists( 'Understrap_WP_Bootstrap_Navwalker' ) ) {
 
 			// If item has_children add atts to <a>.
 			if ( isset( $args->has_children ) && $args->has_children && 0 === $depth && 1 !== $args->depth ) {
-				$atts['href']           = '#';
+				// $atts['href']           = '#'; // Comment or remove this line
 				$atts['data-toggle']    = 'dropdown';
 				$atts['data-bs-toggle'] = 'dropdown';
+				$atts['data-bs-hover']  = 'true'; // Add this line for hover functionality in Bootstrap 5
 				$atts['aria-haspopup']  = 'true';
 				$atts['aria-expanded']  = 'false';
 				$atts['class']          = 'dropdown-toggle nav-link';
@@ -206,6 +207,7 @@ if ( ! class_exists( 'Understrap_WP_Bootstrap_Navwalker' ) ) {
 					$atts['class'] = 'nav-link';
 				}
 			}
+
 
 			$atts['aria-current'] = $item->current ? 'page' : '';
 
