@@ -15399,8 +15399,10 @@ p {
   justify-content: space-between;
 }
 
-.wp-block-column {
-  padding: 0 20px;
+.wp-block-column.is-layout-flow {
+  flex-basis: auto;
+  flex-grow: 1;
+  padding: 0 10px;
 }
 
 .nav, .site-footer, .site-header {

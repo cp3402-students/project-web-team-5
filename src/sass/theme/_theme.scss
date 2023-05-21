@@ -102,8 +102,11 @@ p {
     justify-content: space-between;
 }
 
-.wp-block-column {
-    padding: 0 20px; // This will add padding on the left and right of each column
+// Adjusts the size of your columns
+.wp-block-column.is-layout-flow {
+    flex-basis: auto;
+    flex-grow: 1;
+    padding: 0 10px;
 }
 
 // Navigation styles
