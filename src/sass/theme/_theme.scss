@@ -24,6 +24,10 @@ body {
     background-size: cover;
 }
 
+.bg-primary {
+    background-color: rgb(136, 83, 22);
+  }
+
 // Typography
 h1, h2 {
     color: $primary-color;

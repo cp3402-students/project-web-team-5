@@ -15325,6 +15325,10 @@ body {
   background-size: cover;
 }
 
+.bg-primary {
+  background-color: rgb(136, 83, 22);
+}
+
 h1, .h1, h2, .h2 {
   color: #fc8c03;
   font-weight: bold;
