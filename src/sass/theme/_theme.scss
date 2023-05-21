@@ -71,7 +71,7 @@ p {
 }
 
 .wp-block-post {
-    border-bottom: 2px solid rgba(0,0,0,0.1); // black spacers
+    border-bottom: 2px solid rgba(0,0,0,0.1); // black
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
@@ -87,16 +87,8 @@ p {
 }
 
 .entry-content img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-}
-
-a img.wp-post-image {
-    display: inline-block;
-}
-
-.wp-block-column.is-layout-flow {
-    padding: 0 200px;
 }
 
 .entry-content {

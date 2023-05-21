@@ -14197,16 +14197,8 @@ p {
 }
 
 .entry-content img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
-}
-
-a img.wp-post-image {
-  display: inline-block;
-}
-
-.wp-block-column.is-layout-flow {
-  padding: 0 200px;
 }
 
 .entry-content {
