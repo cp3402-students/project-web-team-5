@@ -15325,12 +15325,8 @@ body {
   background-size: cover;
 }
 
-.main-nav {
-  background-color: brown !important;
-}
-
-.wrapper-navbar {
-  background-color: brown !important;
+.bg-primary {
+  background-color: #c58c22 !important;
 }
 
 h1, .h1, h2, .h2 {
