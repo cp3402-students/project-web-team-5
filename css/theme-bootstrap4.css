@@ -14178,6 +14178,10 @@ a:hover {
   color: #975402;
 }
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 p {
   margin: 20px;
   background-color: rgba(153, 153, 153, 0.3);
