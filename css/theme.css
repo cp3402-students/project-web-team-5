@@ -15382,6 +15382,12 @@ p {
   height: auto;
 }
 
+.entry-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .nav, .site-footer, .site-header {
   background-color: #fc8c03;
   color: #fff;

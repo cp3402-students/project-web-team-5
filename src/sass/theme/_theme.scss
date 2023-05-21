@@ -84,6 +84,12 @@ p {
     height: auto;
 }
 
+.entry-content {
+    background-color: rgba(255, 255, 255, 0.8); // slightly transparent white
+    padding: 20px;
+    border-radius: 10px; // rounded corners for a modern look
+}
+
 // Navigation styles
 .nav, .site-footer, .site-header {
     background-color: $primary-color;
