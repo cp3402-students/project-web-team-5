@@ -14132,7 +14132,7 @@ body {
 }
 
 h1, h2 {
-  color: #fc8c03;
+  color: #18fc03;
   font-weight: bold;
 }
 
@@ -14156,11 +14156,11 @@ h3 {
 }
 
 a {
-  color: #fc8c03;
+  color: #18fc03;
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #975402;
+  color: #0e9702;
 }
 
 .site-content {
@@ -14184,7 +14184,7 @@ a:hover {
 }
 
 .nav, .site-footer, .site-header {
-  background-color: #fc8c03;
+  background-color: #18fc03;
   color: #fff;
   display: flex;
   justify-content: center;
