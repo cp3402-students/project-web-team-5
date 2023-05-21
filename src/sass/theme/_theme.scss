@@ -87,13 +87,17 @@ p {
 }
 
 .entry-content img {
-    max-width: 75%;
+    max-width: 50%;
     height: auto;
-    margin-left: 100px;
+    margin-left: 320px;
 }
 
 a img.wp-post-image {
     display: inline-block;
+}
+
+.wp-block-column.is-layout-flow {
+    margin-right: 20px;
 }
 
 .entry-content {
