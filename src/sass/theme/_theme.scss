@@ -57,6 +57,10 @@ a {
     }
 }
 
+.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  
 // Layout
 .site-content {
     max-width: 800px;
