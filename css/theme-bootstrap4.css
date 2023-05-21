@@ -14172,7 +14172,7 @@ a:hover {
 
 p {
   margin: 20px;
-  background-color: #f9f9f9;
+  background-color: rgba(153, 153, 153, 0.7);
 }
 
 .site-content {
