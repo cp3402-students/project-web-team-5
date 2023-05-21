@@ -65,6 +65,10 @@ a {
     }
 }
 
+.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  
 // Paragraph styles with blocks and margins
 p {
     margin: 20px;
