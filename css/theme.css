@@ -3,6 +3,13 @@ body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 24px; /* You can adjust the size as desired */
 }
+body {
+  background: url('src/sass/Images/websitebg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 body {
   background-color: brown;
