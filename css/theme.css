@@ -15386,6 +15386,11 @@ p {
 .entry-content img {
   max-width: 75%;
   height: auto;
+  margin-left: 100px;
+}
+
+a img.wp-post-image {
+  display: inline-block;
 }
 
 .entry-content {
