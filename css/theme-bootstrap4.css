@@ -14170,6 +14170,10 @@ a:hover {
   color: #975402;
 }
 
+p {
+  margin: 20px;
+}
+
 .site-content {
   max-width: 800px;
   margin: 0 auto;
