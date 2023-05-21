@@ -15394,6 +15394,15 @@ p {
   border-radius: 10px;
 }
 
+.wp-block-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wp-block-column {
+  padding: 0 20px;
+}
+
 .nav, .site-footer, .site-header {
   background-color: #fc8c03;
   color: #fff;

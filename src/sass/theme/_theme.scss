@@ -97,6 +97,15 @@ p {
     border-radius: 10px; // rounded corners for a modern look
 }
 
+.wp-block-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wp-block-column {
+    padding: 0 20px; // This will add padding on the left and right of each column
+}
+
 // Navigation styles
 .nav, .site-footer, .site-header {
     background-color: $primary-color;
