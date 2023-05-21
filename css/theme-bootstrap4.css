@@ -14139,7 +14139,7 @@ body {
 }
 
 .bg-brown {
-  background-color: brown;
+  background-color: brown !important;
 }
 
 h1, h2 {
