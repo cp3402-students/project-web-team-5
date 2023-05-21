@@ -57,6 +57,10 @@ h3 {
     font-weight: $font-weight;
 }
 
+.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  
 a {
     color: $primary-color;
     transition: color 0.3s ease;
@@ -65,10 +69,7 @@ a {
     }
 }
 
-.dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-  
+
 // Paragraph styles with blocks and margins
 p {
     margin: 20px;
